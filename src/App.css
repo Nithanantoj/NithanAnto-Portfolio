@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #000000;
+  min-height: 100vh;
+  position: relative;
+}
+
+:root {
+  --primary-color: #06d6a0;
+  --primary-light: rgba(6, 214, 160, 0.2);
+  --primary-dark: #05c090;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #0a192f;
+  position: relative;
+}
+
+/* Navbar styles */
+.navbar {
+  background: rgba(0, 0, 0, 0.7) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(6, 214, 160, 0.1);
+  z-index: 1000;
+  height: 70px;
+  box-shadow: 0 4px 30px rgba(6, 214, 160, 0.1);
+}
+
+.nav-logo {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-logo:hover {
+  transform: translateY(-1px);
+  color: var(--primary-color) !important;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.85) !important;
+  text-transform: none !important;
+  font-weight: 400 !important;
+  position: relative;
+  letter-spacing: 0.5px !important;
+  font-size: 0.95rem !important;
+  padding: 6px 0 !important;
+  transition: all 0.3s ease !important;
+  min-width: unset !important;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary-color);
+  transition: width 0.3s ease;
+  opacity: 0.8;
+  box-shadow: 0 0 10px var(--primary-color);
+}
+
+.nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link.active {
+  color: var(--primary-color) !important;
+  font-weight: 500 !important;
+}
+
+.nav-link.active::after {
+  width: 100%;
+  opacity: 1;
+}
+
+/* Content styles */
+.content {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+  color: white;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  animation: spin infinite 20s linear;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* Mobile drawer styles */
+.MuiDrawer-paper {
+  background-color: rgba(0, 0, 0, 0.95) !important;
+  backdrop-filter: blur(10px);
+}
+
+/* Animations */
+@keyframes glow {
+  0% {
+    box-shadow: 
+      0 0 30px rgba(6, 214, 160, 0.3),
+      0 0 60px rgba(6, 214, 160, 0.2),
+      0 0 90px rgba(6, 214, 160, 0.1),
+      inset 0 0 30px rgba(6, 214, 160, 0.3);
+  }
+  100% {
+    box-shadow: 
+      0 0 40px rgba(6, 214, 160, 0.4),
+      0 0 80px rgba(6, 214, 160, 0.3),
+      0 0 120px rgba(6, 214, 160, 0.2),
+      inset 0 0 50px rgba(6, 214, 160, 0.4);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .navbar {
+    height: 60px;
+  }
+  
+  .nav-link {
+    font-size: 0.9rem !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    height: 56px;
+  }
+}

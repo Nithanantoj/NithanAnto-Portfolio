@@ -1,0 +1,29 @@
+/* Wrapper for both marquees */
+.marquee-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: transparent;
+    padding: 20px 0;
+    overflow: hidden;
+  }
+  
+  /* Individual marquee container */
+  .marquee-container {
+    width: 100%;
+  }
+  
+  /* Icon styling */
+  .icon-wrapper {
+    flex-shrink: 0;
+    width: 84px;
+    height: 84px;
+    background-color: #05c090;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 50px;
+    margin: 0 10px;
+  }
+  
