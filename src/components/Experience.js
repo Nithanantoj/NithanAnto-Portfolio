@@ -57,7 +57,7 @@ const Qualifications = () => {
         <Grid container spacing={4}>
           {/* Education Section */}
           <Grid item xs={12} md={6}>
-            <Typography variant="h5" sx={{ fontWeight: "bold", mb: 2 }}>
+            <Typography variant="h5" sx={{ fontWeight: "bold", mb: 2, color: "#06d6a0" }}>
               Education
             </Typography>
             {qualifications.education.map((edu, index) => (
@@ -97,7 +97,7 @@ const Qualifications = () => {
 
           {/* Experience Section */}
           <Grid item xs={12} md={6}>
-            <Typography variant="h5" sx={{ fontWeight: "bold", mb: 2 }}>
+            <Typography variant="h5" sx={{ fontWeight: "bold", mb: 2, color: "#06d6a0" }}>
               Experience
             </Typography>
             {qualifications.experience.map((exp, index) => (
