@@ -1,4 +1,4 @@
-# 🚀 Nithan Anto - Developer Portfolio
+# 🚀 Nithan Anto J- Developer Portfolio
 
 Welcome to my personal portfolio website built using modern web technologies to showcase my projects, skills, and experiences.
 
