@@ -10,3 +10,9 @@ Welcome to my personal portfolio website built using modern web technologies to 
 
 - **Frontend:** React.js, Tailwind CSS, JavaScript
 - **Deployment:** Vercel
+
+---
+
+## 📸 Screenshots
+
+![Home](images/Screenshot 2025-02-20 140747.png)
