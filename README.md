@@ -15,4 +15,4 @@ Welcome to my personal portfolio website built using modern web technologies to 
 
 ## 📸 Screenshots
 
-![Home](images/Screenshot 2025-02-20 140747.png)
+![Home](images/home.png)
